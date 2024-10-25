@@ -1,0 +1,25 @@
+﻿@page "/servers"
+
+
+<h3>Servers</h3>
+<br />
+
+<div class="container-fluid text-center">
+    <div class="row align-content-around w-50">
+        @foreach (var city in cities)
+        {
+            <div class="col">
+                <div class="card">
+                    <img src="@($"/images/Newimages/{city}.png")" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<String> cities = ServicesRepository.GetServices();
+}

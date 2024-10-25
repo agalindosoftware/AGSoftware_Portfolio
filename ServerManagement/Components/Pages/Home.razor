@@ -1,0 +1,65 @@
+﻿@page "/"
+@page "/servers"
+
+<PageTitle>AG Software</PageTitle>
+
+<div class="center-content">
+    <img src="images/newimages/adriana galindo software logo.png" alt="Example Image" width="400" height="400" />
+    <h5 style="color: black;">Design, develop, and implement solutions to update your data systems and internal processes.</h5>
+</div>
+
+<style>
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+</style>
+
+<div class="two-column-list">
+    <img src="/images/Newimages/Design 1.png" style="width: 300px; height: auto; object-fit: cover; border-radius: 5px;" alt="design">
+            <div class="text">
+                <h3>Design</h3>
+                <p>
+                    Client requirements
+                    Existing Software development and modification
+                    2 revisions
+                    Customized output
+                </p>
+            </div>
+        </div>
+        <div class="two-column-list">
+    <img src="images/Newimages/Development 2.png" style="width: 300px; height: auto; object-fit: cover; border-radius: 5px;" alt="design">
+            <div class="text">
+                <h3>Development</h3>
+                <p>
+                    Client requirements
+                    Existing Software development and modification
+                    Customized software
+                    Development and Testing
+                    4 revisions
+                </p>
+            </div>
+        </div>
+        <div class="two-column-list">
+    <img src="/images/Newimages/implement 3.png" style="width: 300px; height: auto; object-fit: cover; border-radius: 5px;" alt="design">
+            <div class="text">
+                <h3>Development</h3>
+                <p>
+                    Client requirements
+                    Existing Software development and modification
+                    Customized software
+                    Development and Testing
+                    4 revisions
+                    Software Implementation
+                </p>
+            </div>
+        </div>
+
+
+
+@code {
+    private List<String> services = ServicesRepository.GetServices();
+}
